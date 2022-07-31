@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+section{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+nav{
+    background-color: rgba(211, 211, 211, 0.545);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.navgray-box{
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+aside{
+    width: 15%;
+    height: 100vh;
+    background-color: gray;
+    
+}
+.aside-box{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    margin: 20px;
+}
+
+nav>input{
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    background-color: gray;
+    margin-left: 20px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 20px;
+    
+    
+}
+.circle-box{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items:flex-end;
+
+
+
+}
+
+
+@media all and  (max-width:400px)
+{
+
+    aside{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .circle{
+        
+       position: fixed;
+       right: 0;
+       margin-top: 350px;
+       
+    
+        
+    }
+
+    .aside-box{
+        width: 50px;
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    input{
+        display: none;
+    }
+    
+}
